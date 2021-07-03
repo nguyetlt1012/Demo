@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex3</title>
+    <style>
+      .header,
+      .footer {
+        background-color: rgb(95, 121, 235);
+        padding: 20px 20px 20px 100px;
+        color: aliceblue;
+      }
+      .intro,
+      .box {
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+      .card {
+        width: 250px;
+        display: inline-block;
+        margin-right: 30px;
+        margin-top: 10px;
+      }
+      .course {
+        padding-left: 100px;
+        margin-bottom: 30px;
+      }
+
+      .course-img {
+        width: 100%;
+        height: 144px;
+        background-image: url("./abc.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+      }
+      .course-content {
+        border: 1px solid #c3c3c3;
+        padding: 15px;
+      }
+      .course-content p {
+        margin-bottom: 15px;
+      }
+      .course-price {
+        text-align: right;
+        color: red;
+        margin-top: 20px;
+      }
+      .teachers {
+        padding-left: 100px;
+        margin-bottom: 30px;
+        max-height: 500px;
+        overflow-y: auto; /* hieu ung cuon */
+      }
+      .teachers .teacher .image {
+        width: 256px;
+        height: 144px;
+        background-image: url("./mytam.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        float: left;
+      }
+      .teachers .teacher {
+        height: 144px;
+        margin-bottom: 15px;
+        position: relative;
+      }
+      .teachers .teacher .inf {
+        float: left;
+        border: 1px solid #dadada;
+        width: 300px;
+        padding-left: 15px;
+        border-left: none;
+        height: 142px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      .teachers .teacher .number {
+        position: absolute;
+        bottom: -10px;
+        left: 5px;
+        background-color: black;
+        opacity: 0.6;
+        color: white;
+        padding: 5px 10px;
+      }
+      .footer .more{
+              width: 50%;
+              display: inline-flex;
+              
+      }
+      .footer .more ul{
+              list-style: none;
+              
+      }
+      .footer .more li{
+              padding: 3px;
+              cursor: pointer;
+      }
+      .footer .address{
+              width: 50%;
+              float: left;
+      }
+      .nav-container {
+              float: right;
+              height: 70px;
+              padding: 30px ;
+      }
+      .nav-container a{
+              margin-right: 10px;
+
+      }
+      .nav-container a:hover{
+              border: 2px solid #919191;
+              cursor: pointer;
+      }
+      .course-teacher img{
+              vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <head>
+      <div class="header">
+        <img
+          src="./logo.png"
+          height="50"
+          width="50"
+          style="border-radius: 100% ; vertical-align: middle;"
+        />
+        <h2 style="color: white ; display:inline-block;vertical-align: middle; padding-left: 20px;">PlusPlus Academy</h2>
+        <div class="nav-container">
+                <nav>
+                        <a style="border-bottom:2px solid #999999 ;">Giới thiệu</a>
+                        <a>Khóa học</a>
+                        <a>Đăng ký</a>
+                </nav>
+        </div>
+
+      </div>
+    </head>
+    <main>
+      <div class="intro">
+        <h1>PLUS PLUS, WHERE YOU CAN SHINE WITH US!</h1>
+        <section>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that is has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content here', making it
+          look like readable English. Many desktop publishing packages and web
+          page editors now use Lorem Ipsum as their default model text, and a
+          search for 'lorem ipsum' will uncover many web sites still in their
+          infancy. Various version have evolved over the years, sometimes by
+          accident, sometimes on purpose (injected humour and the like).
+        </section>
+      </div>
+      <div class="course">
+        <h2 style="color: blue">Soldout course</h2>
+        <div class="card">
+          <div class="course-img"></div>
+          <div class="course-content">
+            <p>Khóa học lập trình Frontend căn bản</p>
+            <div class="course-teacher">
+              <img
+                src="./mytam.jpg"
+                style="border-radius: 50%; height: 50px; width: 50px"
+              />
+              <span>Phan Thị Mỹ Tâm</span>
+            </div>
+            <p class="course-price"><small>200.000VND</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="course-img"></div>
+          <div class="course-content">
+            <p>Khóa học lập trình Frontend căn bản</p>
+            <div class="course-teacher">
+              <img
+                src="./mytam.jpg"
+                style="border-radius: 50%; height: 50px; width: 50px"
+              />
+              <span>Phan Thị Mỹ Tâm</span>
+            </div>
+            <p class="course-price"><small>200.000VND</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="course-img"></div>
+          <div class="course-content">
+            <p>Khóa học lập trình Frontend căn bản</p>
+            <div class="course-teacher">
+              <img
+                src="./mytam.jpg"
+                style="border-radius: 50%; height: 50px; width: 50px"
+              />
+              <span>Phan Thị Mỹ Tâm</span>
+            </div>
+            <p class="course-price"><small>200.000VND</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="teachers">
+        <h2 style="color: blue">OUR TEACHERS</h2>
+        <div class="teacher">
+          <div class="image"></div>
+          <p class="number">10 khoa hoc</p>
+          <div class="inf">
+            <h3>PHAM MY TAM</h3>
+            <p style="font-style: italic">Job title: Singer, Dancer...</p>
+            <p>22-12-1992</p>
+          </div>
+        </div>
+        <div class="teacher">
+          <div class="image"></div>
+          <p class="number">10 khoa hoc</p>
+          <div class="inf">
+            <h3>PHAM MY TAM</h3>
+            <p style="font-style: italic">Job title: Singer, Dancer...</p>
+            <p>22-12-1992</p>
+          </div>
+        </div>
+        <div class="teacher">
+          <div class="image"></div>
+          <p class="number">10 khoa hoc</p>
+          <div class="inf">
+            <h3>PHAM MY TAM</h3>
+            <p style="font-style: italic">Job title: Singer, Dancer...</p>
+            <p>22-12-1992</p>
+          </div>
+        </div>
+        <div class="teacher">
+          <div class="image"></div>
+          <p class="number">10 khoa hoc</p>
+          <div class="inf">
+            <h3>PHAM MY TAM</h3>
+            <p style="font-style: italic">Job title: Singer, Dancer...</p>
+            <p>22-12-1992</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="address">
+        <img
+          src="./logo.png"
+          height="50"
+          width="50"
+          style="border-radius: 100%"
+        />
+        <br />
+        <h4>13 Nguyen Thai Hoc Street, Ba Dinh, Ha Noi</h4>
+      </div>
+      <div class="more" >
+              <ul>
+                      <li>Thông tin chung</li>
+                      <li>Chính sách</li>
+                      <li>Điều khoản</li>
+                      <li>Về chúng tôi</li>
+              </ul>
+      </div>
+	</footer>
+	
+  </body>
+  
+</html>
