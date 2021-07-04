@@ -17,14 +17,16 @@
         padding-right: 100px;
       }
       .card {
-        width: 250px;
-        display: inline-block;
         margin-right: 30px;
-        margin-top: 10px;
+        margin-top: 20px;
       }
       .course {
         padding-left: 100px;
         margin-bottom: 30px;
+      }
+      .all{
+        display: flex;
+        flex-wrap: wrap;
       }
 
       .course-img {
@@ -77,7 +79,8 @@
         width: 300px;
         padding-left: 15px;
         border-left: none;
-        height: 142px;
+        box-sizing: border-box;
+        height: 144px;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
       }
@@ -90,38 +93,36 @@
         color: white;
         padding: 5px 10px;
       }
-      .footer .more{
-              width: 50%;
-              display: inline-flex;
-              
+      .footer .more {
+        width: 50%;
+        display: inline-flex;
       }
-      .footer .more ul{
-              list-style: none;
-              
+      .footer .more ul {
+        list-style: none;
       }
-      .footer .more li{
-              padding: 3px;
-              cursor: pointer;
+      .footer .more li {
+        padding: 3px;
+        cursor: pointer;
       }
-      .footer .address{
-              width: 50%;
-              float: left;
+      .footer .address {
+        width: 50%;
+        float: left;
       }
       .nav-container {
-              float: right;
-              height: 70px;
-              padding: 30px ;
+        float: right;
+        height: 70px;
+        padding: 30px;
+        margin-right: 40px;
       }
-      .nav-container a{
-              margin-right: 10px;
-
+      .nav-container a {
+        margin-right: 10px;
       }
-      .nav-container a:hover{
-              border: 2px solid #919191;
-              cursor: pointer;
+      .nav-container a:hover {
+        border: 2px solid #919191;
+        cursor: pointer;
       }
-      .course-teacher img{
-              vertical-align: middle;
+      .course-teacher img {
+        vertical-align: middle;
       }
     </style>
   </head>
@@ -132,23 +133,31 @@
           src="./logo.png"
           height="50"
           width="50"
-          style="border-radius: 100% ; vertical-align: middle;"
+          style="border-radius: 100%; vertical-align: middle"
         />
-        <h2 style="color: white ; display:inline-block;vertical-align: middle; padding-left: 20px;">PlusPlus Academy</h2>
+        <h2
+          style="
+            color: white;
+            display: inline-block;
+            vertical-align: middle;
+            padding-left: 20px;
+          "
+        >
+          PlusPlus Academy
+        </h2>
         <div class="nav-container">
-                <nav>
-                        <a style="border-bottom:2px solid #999999 ;">Giới thiệu</a>
-                        <a>Khóa học</a>
-                        <a>Đăng ký</a>
-                </nav>
+          <nav>
+            <a style="border-bottom: 2px solid #999999">Giới thiệu</a>
+            <a>Khóa học</a>
+            <a>Đăng ký</a>
+          </nav>
         </div>
-
       </div>
     </head>
     <main>
       <div class="intro">
         <h1>PLUS PLUS, WHERE YOU CAN SHINE WITH US!</h1>
-        <section>
+        <section style="text-align:justify">
           It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout. The point of
           using Lorem Ipsum is that is has a more-or-less normal distribution of
@@ -162,46 +171,146 @@
       </div>
       <div class="course">
         <h2 style="color: blue">Soldout course</h2>
-        <div class="card">
-          <div class="course-img"></div>
-          <div class="course-content">
-            <p>Khóa học lập trình Frontend căn bản</p>
-            <div class="course-teacher">
-              <img
-                src="./mytam.jpg"
-                style="border-radius: 50%; height: 50px; width: 50px"
-              />
-              <span>Phan Thị Mỹ Tâm</span>
+        <div class="all">
+          <div class="card">
+            <div class="course-img"></div>
+            <div class="course-content">
+              <p>Khóa học lập trình Frontend căn bản</p>
+              <div class="course-teacher">
+                <img
+                  src="./mytam.jpg"
+                  style="border-radius: 50%; height: 50px; width: 50px"
+                />
+                <span>Phan Thị Mỹ Tâm</span>
+              </div>
+              <p class="course-price"><small>200.000VND</small></p>
             </div>
-            <p class="course-price"><small>200.000VND</small></p>
           </div>
-        </div>
-        <div class="card">
-          <div class="course-img"></div>
-          <div class="course-content">
-            <p>Khóa học lập trình Frontend căn bản</p>
-            <div class="course-teacher">
-              <img
-                src="./mytam.jpg"
-                style="border-radius: 50%; height: 50px; width: 50px"
-              />
-              <span>Phan Thị Mỹ Tâm</span>
+          <div class="card">
+            <div class="course-img"></div>
+            <div class="course-content">
+              <p>Khóa học lập trình Frontend căn bản</p>
+              <div class="course-teacher">
+                <img
+                  src="./mytam.jpg"
+                  style="border-radius: 50%; height: 50px; width: 50px"
+                />
+                <span>Phan Thị Mỹ Tâm</span>
+              </div>
+              <p class="course-price"><small>200.000VND</small></p>
             </div>
-            <p class="course-price"><small>200.000VND</small></p>
           </div>
-        </div>
-        <div class="card">
-          <div class="course-img"></div>
-          <div class="course-content">
-            <p>Khóa học lập trình Frontend căn bản</p>
-            <div class="course-teacher">
-              <img
-                src="./mytam.jpg"
-                style="border-radius: 50%; height: 50px; width: 50px"
-              />
-              <span>Phan Thị Mỹ Tâm</span>
+          <div class="card">
+            <div class="course-img"></div>
+            <div class="course-content">
+              <p>Khóa học lập trình Frontend căn bản</p>
+              <div class="course-teacher">
+                <img
+                  src="./mytam.jpg"
+                  style="border-radius: 50%; height: 50px; width: 50px"
+                />
+                <span>Phan Thị Mỹ Tâm</span>
+              </div>
+              <p class="course-price"><small>200.000VND</small></p>
             </div>
-            <p class="course-price"><small>200.000VND</small></p>
+          </div>
+          <div class="card">
+            <div class="course-img"></div>
+            <div class="course-content">
+              <p>Khóa học lập trình Frontend căn bản</p>
+              <div class="course-teacher">
+                <img
+                  src="./mytam.jpg"
+                  style="border-radius: 50%; height: 50px; width: 50px"
+                />
+                <span>Phan Thị Mỹ Tâm</span>
+              </div>
+              <p class="course-price"><small>200.000VND</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="course-img"></div>
+            <div class="course-content">
+              <p>Khóa học lập trình Frontend căn bản</p>
+              <div class="course-teacher">
+                <img
+                  src="./mytam.jpg"
+                  style="border-radius: 50%; height: 50px; width: 50px"
+                />
+                <span>Phan Thị Mỹ Tâm</span>
+              </div>
+              <p class="course-price"><small>200.000VND</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="course-img"></div>
+            <div class="course-content">
+              <p>Khóa học lập trình Frontend căn bản</p>
+              <div class="course-teacher">
+                <img
+                  src="./mytam.jpg"
+                  style="border-radius: 50%; height: 50px; width: 50px"
+                />
+                <span>Phan Thị Mỹ Tâm</span>
+              </div>
+              <p class="course-price"><small>200.000VND</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="course-img"></div>
+            <div class="course-content">
+              <p>Khóa học lập trình Frontend căn bản</p>
+              <div class="course-teacher">
+                <img
+                  src="./mytam.jpg"
+                  style="border-radius: 50%; height: 50px; width: 50px"
+                />
+                <span>Phan Thị Mỹ Tâm</span>
+              </div>
+              <p class="course-price"><small>200.000VND</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="course-img"></div>
+            <div class="course-content">
+              <p>Khóa học lập trình Frontend căn bản</p>
+              <div class="course-teacher">
+                <img
+                  src="./mytam.jpg"
+                  style="border-radius: 50%; height: 50px; width: 50px"
+                />
+                <span>Phan Thị Mỹ Tâm</span>
+              </div>
+              <p class="course-price"><small>200.000VND</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="course-img"></div>
+            <div class="course-content">
+              <p>Khóa học lập trình Frontend căn bản</p>
+              <div class="course-teacher">
+                <img
+                  src="./mytam.jpg"
+                  style="border-radius: 50%; height: 50px; width: 50px"
+                />
+                <span>Phan Thị Mỹ Tâm</span>
+              </div>
+              <p class="course-price"><small>200.000VND</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="course-img"></div>
+            <div class="course-content">
+              <p>Khóa học lập trình Frontend căn bản</p>
+              <div class="course-teacher">
+                <img
+                  src="./mytam.jpg"
+                  style="border-radius: 50%; height: 50px; width: 50px"
+                />
+                <span>Phan Thị Mỹ Tâm</span>
+              </div>
+              <p class="course-price"><small>200.000VND</small></p>
+            </div>
           </div>
         </div>
       </div>
@@ -256,16 +365,14 @@
         <br />
         <h4>13 Nguyen Thai Hoc Street, Ba Dinh, Ha Noi</h4>
       </div>
-      <div class="more" >
-              <ul>
-                      <li>Thông tin chung</li>
-                      <li>Chính sách</li>
-                      <li>Điều khoản</li>
-                      <li>Về chúng tôi</li>
-              </ul>
+      <div class="more">
+        <ul>
+          <li>Thông tin chung</li>
+          <li>Chính sách</li>
+          <li>Điều khoản</li>
+          <li>Về chúng tôi</li>
+        </ul>
       </div>
-	</footer>
-	
+    </footer>
   </body>
-  
 </html>
