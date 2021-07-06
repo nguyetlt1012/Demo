@@ -1,205 +1,269 @@
-*{
-    border: 0;
-    padding: 0;
-    font-family: 'Roboto' ,sans-serif;
-    box-sizing: border-box;
+* {
+  border: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
-.header{
-    background-color: rgb(53, 53, 230);
+.header {
+  background-color:#107ed8;
 }
-.header .container{
-    max-width: 1140px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+.header .container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
-.logo img{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+.logo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
-.logo h1{
-    color: #fff;
-    font-size: 26px;
-    margin-left:10px ;
+.logo h1 {
+  color: #fff;
+  font-size: 26px;
+  margin-left: 10px;
 }
-.logo{
-    display: flex;
-    align-items: center;
+.logo {
+  display: flex;
+  align-items: center;
 }
 .nav-container {
-    color: #fff;
+  color: #fff;
 }
-.nav-container a{
-    margin-left: 15px;
-    cursor: pointer;
+.nav-container a {
+  margin-left: 15px;
+  cursor: pointer;
 }
-.banner{
-    background: url('./background.jpg');
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-size: cover;
-    background-position: center;
+.banner {
+  background: url("./background.jpg");
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
 }
-.banner .black{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: black;
-    opacity: 0.5;
-    height: 400px;
-    width: 100%;
+.banner .black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0.5;
+  height: 400px;
+  width: 100%;
+}
+.banner .content {
+  color: #fff;
+  z-index: 1;
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.banner .content button {
+  background: cornflowerblue;
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #fff;
+}
+.banner .content button:hover {
+  background: rgb(216, 175, 42);
+}
+.banner .content .text1 {
+  margin-bottom: 30px;
+  animation-name: topDown;
+  animation-duration: 1s;
+}
+@keyframes topDown {
+  from {
+    transform: translateY(-400px);
+    opacity: 0;
+    font-size: 50px;
+  }
 
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    font-size: 35px;
+  }
 }
-.banner .content{
-    color: #fff;
-    z-index: 1;
-    font-size: 23px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.intro {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.banner .content button{
-    background: cornflowerblue;
-    font-size: 20px;
-    padding: 10px 30px;
-    border-radius: 5px ;
-    color: #fff;
+.intro p {
+  margin: 0px;
 }
-.banner .content button:hover{
-    background: rgb(216, 175, 42);
-}
-.banner .content .text1{
-    
-    margin-bottom: 30px;
-    animation-name: topDown;
-    animation-duration: 1s;
-}
-@keyframes topDown{
-    from {
-        transform: translateY(-400px);
-        opacity: 0;
-        font-size: 50px;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-        font-size: 35px;
-    } 
-}
-.intro{
-    max-width: 1140px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.intro p{
-    margin: 0px;
-}
-.course h2{
-    text-align: center;
-
+.course h2 {
+  text-align: center;
 }
 .card {
-    width: 24%;
+  width: 24%;
 }
-.card .course-img{
-    background: url('./abc.png');
-    height: 144px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+.card .course-img {
+  background: url("./abc.png");
+  height: 144px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
-.card .course-content{
-    background: #ececec;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-
+.card .course-content {
+  background: #ececec;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
-.card:hover{
-    box-shadow: 5px 5px 5px #c7c7c7;
+.card:hover {
+  box-shadow: 5px 5px 5px #c7c7c7;
 }
-.card .course-content p{
-    margin: 0;
-    padding: 20px;
-    
+.card .course-content p {
+  margin: 0;
+  padding: 20px;
 }
-.card .course-teacher{
-    display: flex;
-    align-items: center;
-    padding:  0 15px;
+.card .course-teacher {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
 }
-.card .course-teacher span{
-    margin-left: 15px;
+.card .course-teacher span {
+  margin-left: 15px;
 }
-.course-price{
-    text-align: right;
-    color: crimson;
-    font-size: 18px;
-    padding-right: 10px;
+.course-price {
+  text-align: right;
+  color: crimson;
+  font-size: 18px;
+  padding-right: 10px;
 }
-.all-course{
-    max-width: 1140px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.all-course {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.card{
-    margin-right: 10px;
+.card {
+  margin-right: 10px;
+  margin-top: 10px;
 }
-.teacher{
-    display: flex;
-    position: relative;
-   margin-bottom: 20px;
-   transition: box-shadow 0.5s;
-
+.teacher {
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+  transition: box-shadow 0.5s;
 }
-.teacher .image{
-    background: url('./my-tam-teacher.jpg');
-    height: 200px;
-    width: 250px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    transition: all 0.5s;
+.teacher .image {
+  background: url("./my-tam-teacher.jpg");
+  height: 200px;
+  width: 250px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: all 0.5s;
 }
-.teacher .number{
-    color: #fff;
-    background: rgb(10, 10, 10);
-    position: absolute;
-    bottom: 10px;
-    left: 13px;
-    padding: 5px 10px;
-    opacity: 0.7;
-    margin: 0;
+.teacher .number {
+  color: #fff;
+  background: rgb(10, 10, 10);
+  position: absolute;
+  bottom: 10px;
+  left: 13px;
+  padding: 5px 10px;
+  opacity: 0.7;
+  margin: 0;
 }
-.teacher .inf{
-    background:#ececec;
-    padding: 5px 50px 5px 30px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+.teacher .inf {
+  background: #ececec;
+  padding: 5px 50px 5px 30px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
-.teachers{
-    max-width: 1140px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
+.teachers {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
 }
-.teacher:hover{
-    box-shadow: 5px 5px 5px #c7c7c7;
+.teacher:hover {
+  box-shadow: 5px 5px 5px #c7c7c7;
+}
+.form {
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+  height: 400px;
+}
+.form .img1 {
+  width: 50%;
+  background: url("./abc.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form .form-content {
+  border: 1px solid #ececec;
+  width: 50%;
+  padding-left: 40px;
+}
+.form .form-content .list-form .inputs input {
+  border: 1px solid #ececec;
+  padding: 10px 15px;
+  width: 100%;
+  margin: 10px 0;
+}
+.form .form-content .list-form {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+.form .form-content .list-form .lables label {
+  padding: 10px 15px;
+  display: inline-block;
+  margin: 10px 0;
+}
+.form .form-content .list-form .inputs {
+  margin-right: 10px;
+  width: 60%;
+}
+.form-content button {
+  float: right;
+  margin-right: 10px;
+  background: cornflowerblue;
+  font-size: 14px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+.form-content button:hover{
+        background: rgb(216, 175, 42);
+}
+.footer{
+        margin-top: 20px;
+        background: #107ed8;
+        color: #fff;
+}
+.footer-content{
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+}
+.footer-content .address{
+        width: 50%;
+        margin-top: 10px;
+}
+.footer-content .more ul{
+        list-style-type: none;
+}
+.footer-content .more ul li{
+        margin: 5px 0;
 }
