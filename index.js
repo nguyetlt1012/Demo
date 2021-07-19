@@ -18,3 +18,4 @@ function setCountDownFlashSale(second) {
 let countDown = setInterval(function () {
   setCountDownFlashSale(flashsaletime--);
 }, 1000);
+console.log('olala')
